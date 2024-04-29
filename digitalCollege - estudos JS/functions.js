@@ -21,3 +21,24 @@ function converterEmLetrasMaiusculas(alunos) {
 
 let letra = converterEmLetrasMaiusculas(nomeDoAluno);
 console.log(letra);
+
+//-------------------------------------//
+
+let soma = function (n1,n2){
+    return n1 + n2;
+}
+
+let subtrair = function (n1,n2){
+    return n1 - n2;
+}
+
+function calculadora(n1,n2, action, action2){
+    if(n1 > n2) {
+      return action (n1,n2);        
+    }
+      return action2(n1,n2);
+}
+
+let resultado = calculadora(10,20, function(n1,n2) {return n1 - n2}, soma);
+console.log(resultado);
+
